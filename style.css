@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: rgb(228, 228, 233);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
-.header a {
+a {
   text-decoration: none;
   color: floralwhite;
 }
@@ -46,7 +47,34 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.boxline {
+  text-align: center;
+}
+
 .box {
-  width: 15%;
-  font-size: 0.8em;
+  width: 20%;
+  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgb(45, 45, 49);
+  color: rgb(228, 228, 233);
+  height: 220px;
+  margin-right: 50px;
+  padding: 25px;
+}
+
+.linkbox {
+  background-color: rgb(228, 228, 233);
+  color: rgb(45, 45, 49);
+  padding: 5px;
+  margin: 15px 30%;
+}
+
+.linkbox a {
+  color: rgb(45, 45, 49);
+  font-weight: bold;
+}
+
+.linkbox:hover {
+  background-color: rgb(86, 86, 87);
 }
