@@ -1,48 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(228, 228, 233);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  text-align: left;
+}
+
+.header {
+  background: rgb(86, 86, 87);
+  padding: 20px;
+  margin: -10px -10px 0 -10px;
+}
+
+.header-linkbox {
+  background-color: rgb(228, 228, 233);
+  color: rgb(45, 45, 49);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+.header-linkbox:hover {
+  background-color: rgb(140, 140, 141);
+}
+
 a {
   text-decoration: none;
-  font-weight: bold;
-  color: #aeb7b3;
+  color: floralwhite;
 }
-body {
-  background-color: #23334a;
-  color: #aeb7b3;
-  font-family: 'Roboto', sans-serif;
+
+.intro {
+  background: rgb(228, 228, 233);
+  padding: 40px 30px 300px 30px;
 }
-.border {
+
+.profile-pic img {
+  width: 350px;
   border-radius: 20px;
-  border-color: #826754;
-  border-width: 3px;
-  border-style: solid;
-}button {
-  background-color: white;
-  padding: 10px;
-  width: fit-content;
+  float: left;
+  padding: 20px;
+  background-color: silver;
+}
+
+.intro-text {
+  margin: 30px 30px 30px 400px;
+}
+
+.intro-text h1 {
+  font-weight: 400;
+  line-height: 0;
+  text-align: center;
+}
+
+.intro-text h2 {
+  font-weight: 400;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.boxline {
+  text-align: center;
+}
+
+.box {
+  width: 20%;
+  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgb(45, 45, 49);
+  color: rgb(228, 228, 233);
+  height: 220px;
+  margin-right: 50px;
+  padding: 25px;
+}
+
+.linkbox {
+  background-color: rgb(228, 228, 233);
+  color: rgb(45, 45, 49);
+  padding: 5px;
+  margin: 15px 30%;
   border-radius: 5px;
-  text-decoration: none;
-  color: #ad5d4e;
 }
-h1, h2{
-  font-family: 'Montserrat', sans-serif;
+
+.linkbox a {
+  color: rgb(45, 45, 49);
+  font-weight: bold;
 }
-h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  color: #ad5d4e;
+
+.linkbox:hover {
+  background-color: rgb(86, 86, 87);
 }
-.destaque-1 {
-  background-color: #826754;
-  width: fit-content;
-  padding: 5px 10px;
-  border-radius: 3px;
-}
-.destaque-2 {
-  color: #EB6534;
-}
-.normal-paragraph {
-  background-color: white;
-  padding: 10px;
-  margin-top: 2px;
-  color: #23334a;
-}
-.bigger-font {
-  font-size: 1.2em;
+
+.every-other {
+  font-weight: 300;
+  font-style: italic;
 }
