@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   background: rgb(86, 86, 87);
   padding: 20px;
-  margin: -10px -10px 0 -10px;
+  margin: auto;
 }
 
 .header a {
@@ -37,9 +37,16 @@ h1, h2, h3, h4, h5, h6 {
 .intro-text h1 {
   font-weight: 400;
   line-height: 0;
+  text-align: center;
 }
 
 .intro-text h2 {
   font-weight: 400;
   font-variant: small-caps;
+  text-align: center;
+}
+
+.box {
+  width: 15%;
+  font-size: 0.8em;
 }
