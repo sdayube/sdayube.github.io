@@ -97,3 +97,8 @@ a {
 .linkbox:hover {
   background-color: rgb(86, 86, 87);
 }
+
+.every-other {
+  font-weight: 300;
+  font-style: italic;
+}
