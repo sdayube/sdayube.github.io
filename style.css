@@ -1,195 +1,35 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: white;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 
-body {
-  background-attachment: fixed;
-  background-image: linear-gradient(rgba(12, 29, 87, 0.975), rgba(27, 90, 90, 0.995)),
-    url('images/Internet-Impact-article-GettyImages-1148243894-1400x700-c-center.jpg');
-  background-size: cover;
-}
+  --font-family-sans-serif: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,
+    'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 5px;
-}
-
-h2 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-}
-
-header {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  font-family: Goldman, cursive;
-  font-size: 1.5em;
-}
-
-header nav {
-  display: flex;
-  width: 750px;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 25px 0 0;
-}
-
-.nav-list a {
-  border-radius: 10px;
-  color: white;
-  padding: 3px 8px;
-  text-decoration: none;
-  transition: 0.1s;
-  margin: 0 5px;
-}
-
-.nav-list a:hover {
-  background-color: rgba(255, 255, 255, 0.55);
-  color: rgb(12, 29, 87);
-  text-shadow: 0 0 0.5px rgb(12, 29, 87);
-}
-
-.nav-list .icon {
-  display: none;
-}
-
-.about-me {
-  background-color: hsla(174, 75%, 70%, 0.66);
-  width: 80%;
-  max-width: 1200px;
-  margin: 30px auto;
-  padding: 50px;
-  font-family: Source Sans Pro, sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 30px;
-  transition: 0.1s;
-  box-shadow: 2px 2px 10px;
-}
-
-.about-me:hover {
-  background-color: hsla(174, 85%, 80%, 0.75);
-}
-
-.about-me article {
-  width: 65%;
-  font-size: 1.25em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 433px;
-}
-
-.header-block {
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.text-block p {
-  margin-bottom: 10px;
-  font-size: 1.03em;
-  text-align: center;
-}
-
-.about-me h1 {
-  font-size: 2.5em;
-  letter-spacing: 0.15em;
-}
-
-.about-me h2 {
-  font-size: 1.5em;
-}
-
-.about-me img {
-  width: 30%;
-  border-radius: 15px;
-}
-
-@media only screen and ( max-width : 1200px ) {
-
-  .about-me article {
-    height: auto;
-    font-size: 1em;
-  }
-
-  .about-me h1 {
-    font-size: 2em;
-  }
-
-  .about-me h2 {
-    font-size: 1.1em;
-    letter-spacing: 0.05em;
-  }
-
-  .text-block p {
-    font-size: 1.05em;
-  }
-
-}
-
-@media only screen and ( max-width : 750px ) {
-
-  header nav {
-    width: 100%;
-    flex-direction: row-reverse;
-  }
-
-  .nav-list {
-    justify-content: flex-end;
-    position: absolute;
-    padding: 10px;
-    margin-top: 5px;
-  }
-
-  .nav-list .icon {
-    display: block;
-  }
-
-  .nav-list li {
-    display: none;
-    font-size: 1.5em;
-  }
-
-  .responsive li {
-    display: block;
-  }
-
-  .responsive {
-    align-items: flex-end;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 15px;
-    flex-direction: column;
-    width: fit-content;
-  }
-
-  .about-me {
-    margin-top: 60px;
-    flex-direction: column;
-    background-color: transparent;
-    color: white;
-    width: 100%;
-    border-radius: 0;
-  }
-
-  .about-me:hover {
-    background-color: hsla(174, 85%, 80%, 0.25);
-  }
-
-  .about-me article {
-    width: 100%;
-  }
-
-  .about-me img {
-    width: 70%;
-    margin-bottom: 30px;
-  }
-
+  --font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono',
+    'Courier New', monospace;
 }

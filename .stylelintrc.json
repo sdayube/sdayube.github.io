@@ -17,7 +17,6 @@
     "comment-empty-line-before": "always",
     "comment-no-empty": true,
     "comment-whitespace-inside": "always",
-    "custom-property-empty-line-before": "always",
     "declaration-bang-space-after": "always",
     "declaration-bang-space-before": "always",
     "declaration-block-no-duplicate-properties": true,
