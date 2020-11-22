@@ -1,4 +1,6 @@
 :root {
+
+  /*
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -32,4 +34,24 @@
 
   --font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono',
     'Courier New', monospace;
+  */
+
+  /* Override Variables */
+  --font-family-sans-serif: 'Source Sans Pro', -apple-system, blinkmacsystemfont,
+    'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --gray-dark: #404040;
+
+  /* Page Variables */
+  --font-family-serif: merriweather, serif;
+
+  --color-text: var(--gray-dark);
+  --font-family-text: var(--font-family-serif);
+}
+
+body {
+  font-family: var(--font-family-text);
+  color: var(--color-text);
+  font-weight: 200;
 }
