@@ -41,7 +41,7 @@
     'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  --gray-dark: #404040;
+  --gray-dark: hsl(0, 0%, 25%);
 
   /* Page Variables */
   --font-family-serif: merriweather, serif;
@@ -50,8 +50,21 @@
   --font-family-text: var(--font-family-serif);
 }
 
+.family-sans {
+  font-family: var(--font-family-sans-serif);
+}
+
+
 body {
   font-family: var(--font-family-text);
   color: var(--color-text);
   font-weight: 200;
+}
+
+.site-header {
+  background: url('');
+}
+
+.layout-social {
+  font-size: 2em;
 }
