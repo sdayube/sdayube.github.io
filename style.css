@@ -18,6 +18,7 @@ body {
   min-height: 100%;
 }
 
+/* Header section */
 header {
   background-color: white;
 }
@@ -54,4 +55,38 @@ nav a:hover {
 
 .current-link {
   color: #0082f3;
+}
+
+/* Hero section */
+.hero {
+  padding: 195px 0;
+  border-bottom: 4px solid #69b9ff;
+  background-image: linear-gradient(180deg, #007a, #0f314e), url('images/galaxy.jpeg');
+  background-position: bottom left;
+  background-size: auto, cover;
+  text-align: center;
+}
+
+section .container {
+  flex-direction: column;
+}
+
+.hero h1 {
+  margin: 0 0 30px;
+  color: white;
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  margin-bottom: 40px;
+  color: #2e9dff;
+  line-height: 25px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-shadow: black 4px 4px 5px;
 }
