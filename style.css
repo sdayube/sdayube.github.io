@@ -20,7 +20,7 @@ body {
 }
 
 section {
-  padding: 80px 10px;
+  padding: 50px 10px 30px;
   background-color: white;
 }
 
@@ -38,9 +38,9 @@ header {
 }
 
 .logo {
-  color: #69b9ff;
+  color: #709cc2;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 4px;
   line-height: 25px;
   padding: 16px 0;
@@ -133,6 +133,10 @@ section .container {
   margin-bottom: 55px;
 }
 
+.title-group:last-child {
+  margin-bottom: 10px;
+}
+
 .title-group h2 {
   color: #676770;
   font-size: 30px;
@@ -193,4 +197,9 @@ section .container {
   margin: 10px auto;
   font-size: 14px;
   line-height: 25px;
+}
+
+/* Services section */
+.accent {
+  background-color: #192024;
 }
