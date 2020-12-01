@@ -1,3 +1,6 @@
+/* Global modifications
+---------------------------------------------------------- */
+
 html {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -24,9 +27,14 @@ section {
   background-color: white;
 }
 
-/* Header section */
+/* Header section
+---------------------------------------------------------- */
+
 header {
   background-color: white;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px 10px grey;
 }
 
 .container {
@@ -63,18 +71,22 @@ nav a:hover {
   color: #0082f3;
 }
 
-/* Hero section */
+/* Hero section
+---------------------------------------------------------- */
+
 .hero {
   background-image: linear-gradient(180deg, #3868a0aa, #1c4466), url('images/galaxy.jpeg');
   background-position: bottom left;
   background-size: auto, cover;
   border-bottom: 4px solid #69b9ff;
-  padding: 195px 0;
   text-align: center;
+  height: 100vh;
+  display: flex;
 }
 
 section .container {
   flex-direction: column;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -109,6 +121,7 @@ section .container {
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 300ms ease;
+  border: none;
 }
 
 .button:hover {
@@ -128,7 +141,14 @@ section .container {
   transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
 }
 
-/* Stack section */
+.hollow-button:hover {
+  border-color: #2e9dff;
+  color: #2e9dff;
+}
+
+/* Stack section
+---------------------------------------------------------- */
+
 .title-group {
   margin-bottom: 55px;
 }
@@ -183,7 +203,7 @@ section .container {
   color: white;
 }
 
-.card h3 {
+.card-row h3 {
   margin: 0 auto;
   color: #676770;
   font-size: 20px;
@@ -193,13 +213,31 @@ section .container {
   text-transform: uppercase;
 }
 
-.card p {
+.card-row p {
   margin: 10px auto;
   font-size: 14px;
   line-height: 25px;
 }
 
-/* Services section */
+/* Services section
+---------------------------------------------------------- */
+
 .accent {
   background-color: #192024;
+}
+
+.container .white-text {
+  color: white;
+}
+
+.service-box {
+  margin-bottom: 30px;
+  padding: 15px;
+  text-align: center;
+  flex: 1 1 50%;
+}
+
+.service-box img {
+  width: 100%;
+  margin-bottom: 20px;
 }

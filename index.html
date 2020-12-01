@@ -6,16 +6,17 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Silvio Dayube - Estudante de Desenvolvimento Web</title>
 </head>
 <body>
-  <header>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <header id="navbar">
     <div class="container">
       <a class="logo" href="#">S.Dayube</a>
       <nav>
         <a href="#projects" class="current-link">Home</a>
-        <a href="#stack">Stack</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#stack">Soft Skills</a>
         <a href="#projects">Projetos</a>
         <a href="#contact">Contato</a>
       </nav>
@@ -46,12 +47,12 @@
           </div>
           <div class="card">
             <img src="images/css.svg" alt="">
-            <h3>css 3</h3>
+            <h3>CSS 3</h3>
             <p>Posso desenvolver layouts básicos e reproduzir templates avançados com fidelidade usando grid e flexbox</p>
           </div>
           <div class="card">
             <img src="images/js.svg" alt="">
-            <h3>javascript es6</h3>
+            <h3>JavaScript ES6</h3>
             <p>Compreendo a lógica por trás da linguagem e sou proficiente no uso do padrão ECMAScript 2015 para a manipulação do DOM</p>
           </div>
         </div>
@@ -63,8 +64,30 @@
     <section id="services" class="accent">
       <div class="container">
         <div class="title-group">
-          <h2>Serviços</h2>
-          <p>Ainda estou aprendendo o front-end e sequer comecei o back-end, mas sei qual caminho quero trilhar e já reservei o espaço aqui!</p>
+          <h2 class="white-text">Soft skills</h2>
+          <p class="white-text">Além das hard skills necessárias, a formação da Trybe me proporcionou desenvolver soft skills importantes. Me considero bem desenvolvido quanto às seguintes soft skills:</p>
+        </div>
+        <div class="card-row">
+          <div class="service-box">
+            <img src="images/learn-to-learn.jpg" alt="representation of neural connections">
+            <h3 class="white-text">Aprender a Aprender</h3>
+            <p class="white-text">Mais importante do que ter acesso ao conhecimento é saber como incorporá-lo. Aprender a aprender é saber despertar a curiosidade sobre um assunto, consumi-lo a fundo e curtir o processo. </p>
+            <a href="https://blog.betrybe.com/soft-skills/aprender-a-aprender/" target="_blank" class="hollow-button">Saiba mais</a>
+            
+          </div>
+          <div class="service-box">
+            <img src="images/self-knowledge.jpg" alt="a woman looking at her reflection in the water">
+            <h3 class="white-text">Autoconhecimento</h3>
+            <p class="white-text">Para ter um bom desempenho em todas as áreas da vida, é preciso saber identificar e manejar os próprios sentimentos. Saber seus valores, temperamentos e como a sua história influencia no seu presente.</p>
+            <a href="" target="_blank" class="hollow-button">Saiba mais</a>
+          </div>
+
+          <div class="service-box">
+            <img src="images/communication.jpg" alt="three women having coffee and a fun conversation">
+            <h3 class="white-text">Comunicação</h3>
+            <p class="white-text">Para se comunicar bem, é preciso saber ser claro e assertivo no que se quer passar e saber ouvir o outro. Ter empatia para com o próximo e saber negociar sem recorrer à ríspidez e à agressividade.</p>
+            <a href="https://blog.betrybe.com/soft-skills/comunicacao/" target="_blank" class="hollow-button">Saiba mais</a>
+          </div>
         </div>
       </div>
     </section>
@@ -72,7 +95,7 @@
       <div class="container">
         <div class="title-group">
           <h2>Projetos</h2>
-          <p>Esses são os principais projetos que desenvolvi até o momento. Mas você pode encontrar muito mais no <a href="https://github.com/sdayube" target="_blank">meu GitHub</a>!</p>
+          <p>Esses são os principais projetos que desenvolvi até o momento. Mas você pode encontrar muito mais no <a href="https://github.com/sdayube" target="_blank" id="profile-link">meu GitHub</a>!</p>
         </div>
       </div>
     </section>
