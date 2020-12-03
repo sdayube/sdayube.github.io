@@ -20,11 +20,24 @@ body {
   line-height: 20px;
   margin: 0;
   min-height: 100%;
+  width: 100%;
 }
 
 section {
   padding: 50px 10px 30px;
   background-color: white;
+}
+
+@keyframes fadeEffect {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
 }
 
 /* Header section
@@ -164,6 +177,7 @@ section .container {
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .title-group p {
@@ -172,6 +186,7 @@ section .container {
   text-align: center;
   letter-spacing: 1px;
   line-height: 25px;
+  margin-bottom: 0;
 }
 
 .card-row {
@@ -231,7 +246,6 @@ section .container {
 }
 
 .service-box {
-  margin-bottom: 30px;
   padding: 15px;
   text-align: center;
   flex: 1 1 50%;
@@ -240,4 +254,98 @@ section .container {
 .service-box img {
   width: 100%;
   margin-bottom: 20px;
+}
+
+/* Projects section
+---------------------------------------------------------- */
+
+.dark-hollow {
+  border: 1px solid black;
+  color: black;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  text-align: center;
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-auto-rows: 1fr;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: black 2px 2px 6px;
+
+  --bg-gradient: linear-gradient(180deg, #0f1c2bda, #1c4466);
+}
+
+.grid-item > * {
+  visibility: hidden;
+  color: white;
+}
+
+.grid-item:hover > * {
+  visibility: visible;
+}
+
+.grid-item .button {
+  font-size: 12px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.grid-item .hollow-button {
+  font-size: 12px;
+  padding: 5px 15px;
+}
+
+.meme-generator {
+  background-image: url('images/meme-generator.png');
+  background-size: cover;
+}
+
+.meme-generator:hover {
+  background-image: var(--bg-gradient), url('images/meme-generator.png');
+}
+
+.pixel-art {
+  background-image: url('images/pixel-art.png');
+  background-size: cover;
+  background-position: top center;
+}
+
+.pixel-art:hover {
+  background-image: var(--bg-gradient), url('images/pixel-art.png');
+}
+
+.to-do-list {
+  background-image: url('images/to-do-list.png');
+  background-size: cover;
+  background-position: top center;
+}
+
+.to-do-list:hover {
+  background-image: var(--bg-gradient), url('images/to-do-list.png');
+}
+
+.tribute-page {
+  background-image: url('images/tribute-page.png');
+  background-size: cover;
+  background-position: top center;
+}
+
+.tribute-page:hover {
+  background-image: var(--bg-gradient), url('images/tribute-page.png');
+}
+
+.survey-form {
+  background-image: url('images/survey-form.png');
+  background-size: cover;
+  background-position: top center;
+}
+
+.survey-form:hover {
+  background-image: var(--bg-gradient), url('images/survey-form.png');
 }
