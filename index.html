@@ -1,45 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat:wght@300&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Silvio Dayube - Estudante de Desenvolvimento Web</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav-list">
-        <a href="javascript:void(0);" class="icon">
-          <i class="fa fa-bars"></i>
-        </a>
-        <li><a href="#">Currículo</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header id="navbar">
+    <div class="container">
+      <a class="logo" href="#">S.Dayube</a>
+      <nav>
+        <a href="#welcome-section" class="current-link">Home</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#soft-skills">Soft Skills</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
   </header>
   <main>
-    <section class="about-me">
-      <img src="images/me.jpeg" alt="">
-      <article>
-        <div class="header-block">
-          <h1>Silvio Dayube</h1>
-          <h2>Estudante de Desenvolvimento Web</h2>
+    <section id="welcome-section" class="hero">
+      <div class="container">
+        <h1>Silvio Dayube</h1>
+        <p>Estudante de Desenvolvimento Web</p>
+        <div>
+          <a href="#projects" class="button">Projetos</a>
+          <a href="#" class="hollow-button">Sobre mim</a>
         </div>
-        <div class="text-block">
-          <p>Sou uma pessoa que ama estudar e desenvolver código e o que me realiza é transformar essa paixão em coisas concretas e que tenham o poder de transformar a realidade ao meu redor.</p>
-          <p>Acredito que o futuro do mundo está nas mãos da tecnologia e que o seu maior potencial é o de aumentar o desenvolvimento humano ao redor do planeta por meio da integração de pessoas de todas as etnias e culturas, sem preconceitos de qualquer natureza.</p>
-          <p>Tenho também experiência na área jurídica (sou advogado), mas decidi por migrar em definitivo para a área de desenvolvimento porque percebi que trabalhar com tecnologia é o que me faz feliz de verdade.</p>
+      </div>
+    </section>
+    <section id="stack">
+      <div class="container">
+        <div class="title-group">
+          <h2>tech stack</h2>
+          <p>Essas são as tecnologias que uso com mais frequência como desenvolvedor:</p>
         </div>
-      </article>
+        <div class="card-row">
+          <div class="card">
+            <img src="images/html.svg" alt="">
+            <h3>HTML 5</h3>
+            <p>Tenho experiência com o desenvolvimento de HTML semântico e com a estruturação correta do DOM</p>
+          </div>
+          <div class="card">
+            <img src="images/css.svg" alt="">
+            <h3>CSS 3</h3>
+            <p>Posso desenvolver layouts básicos e reproduzir templates avançados com fidelidade usando grid e flexbox</p>
+          </div>
+          <div class="card">
+            <img src="images/js.svg" alt="">
+            <h3>JavaScript ES6</h3>
+            <p>Compreendo a lógica por trás da linguagem e sou proficiente no uso do padrão ECMAScript 2015 para a manipulação do DOM</p>
+          </div>
+        </div>
+        <div class="title-group">
+          <p>Além dessas tecnologias, tenho familiaridade também com versionamento em Git, colaboração em repositórios no GitHub (branching, pull requests, code review, etc.), bem como com o uso de comandos básicos da linha de comando (Bash) e de sistemas Linux (Ubuntu, ZorinOS).</p>
+        </div>
+      </div>
+    </section>
+    <section id="soft-skills" class="accent">
+      <div class="container">
+        <div class="title-group">
+          <h2 class="white-text">Soft skills</h2>
+          <p class="white-text">Além das hard skills necessárias, a formação da Trybe me proporcionou desenvolver soft skills importantes. Me considero bem desenvolvido quanto às seguintes soft skills:</p>
+        </div>
+        <div class="card-row">
+          <div class="service-box">
+            <img src="images/learn-to-learn.jpg" alt="representation of neural connections">
+            <h3 class="white-text">Aprender a Aprender</h3>
+            <p class="white-text">Mais importante do que ter acesso ao conhecimento é saber como incorporá-lo. Aprender a aprender é saber despertar a curiosidade sobre um assunto, consumi-lo a fundo e curtir o processo. </p>
+            <a href="https://blog.betrybe.com/soft-skills/aprender-a-aprender/" target="_blank" class="hollow-button">Saiba mais</a>
+            
+          </div>
+          <div class="service-box">
+            <img src="images/self-knowledge.jpg" alt="a woman looking at her reflection in the water">
+            <h3 class="white-text">Autoconhecimento</h3>
+            <p class="white-text">Para ter um bom desempenho em todas as áreas da vida, é preciso saber identificar e manejar os próprios sentimentos. Saber seus valores, temperamentos e como a sua história influencia no seu presente.</p>
+            <a href="https://blog.betrybe.com/soft-skills/inteligencia-emocional/" target="_blank" class="hollow-button">Saiba mais</a>
+          </div>
+
+          <div class="service-box">
+            <img src="images/communication.jpg" alt="three women having coffee and a fun conversation">
+            <h3 class="white-text">Comunicação</h3>
+            <p class="white-text">Para se comunicar bem, é preciso saber ser claro e assertivo no que se quer passar e saber ouvir o outro. Ter empatia para com o próximo e saber negociar sem recorrer à ríspidez e à agressividade.</p>
+            <a href="https://blog.betrybe.com/soft-skills/comunicacao/" target="_blank" class="hollow-button">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="title-group">
+          <h2>Projetos</h2>
+          <p>Esses são os principais projetos que desenvolvi até o momento. Mas você pode encontrar muito mais no <a href="https://github.com/sdayube" target="_blank" id="profile-link">meu GitHub</a>!</p>
+        </div>
+        <div class="project-grid">
+          <div class="project-tile meme-generator">
+            <h3>Projeto Meme Generator</h3>
+            <p>Gerador de memes com imagens predeterminadas ou upadas pelo usuário. Construído com HTML, CSS e JS vanilla</p>
+            <div>
+              <a href="meme-generator/index.html" class="button">Visualizar</a>
+              <a href="https://github.com/sdayube/meme-generator-project" target="_blank" class="hollow-button">Repositório</a>
+            </div>
+          </div>
+          <div class="project-tile pixel-art">
+            <h3>Projeto Pixel Art</h3>
+            <p>Gerador de quadro para pixel art com tamanho dinâmico e cores aleatórias. Construído com HTML, CSS e JS vanilla</p>
+            <div>
+              <a href="pixel-art/index.html" class="button">Visualizar</a>
+              <a href="https://github.com/sdayube/pixel-art-project" target="_blank" class="hollow-button">Repositório</a>
+            </div>
+          </div>
+          <div class="project-tile to-do-list">
+            <h3>Projeto To Do List</h3>
+            <p>Lista de tarefas dinâmica que permite adicionar, selecionar, marcar e apagar itens e salvar o estado no local storage. Construída com HTML, CSS e JS vanilla</p>
+            <div>
+              <a href="to-do-list/index.html" class="button">Visualizar</a>
+              <a href="https://github.com/sdayube/to-do-list-project" target="_blank" class="hollow-button">Repositório</a>
+            </div>
+          </div>
+          <div class="project-tile tribute-page">
+            <h3>Projeto Tribute Page</h3>
+            <p>Página de tributo simples com layout responsivo baseado em flexbox. Feita com HTML e CSS.</p>
+            <div>
+              <a href="tribute-page/index.html" class="button">Visualizar</a>
+              <a href="https://github.com/sdayube/tribute-page" target="_blank" class="hollow-button">Repositório</a>
+            </div>
+          </div>
+          <div class="project-tile survey-form">
+            <h3>Projeto Survey Form</h3>
+            <p>Exemplo de formulário construído com HTML semântico e layout responsivo. Construído com HTML e CSS.</p>
+            <div>
+              <a href="survey-form/index.html" class="button">Visualizar</a>
+              <a href="https://github.com/sdayube/survey-page" target="_blank" class="hollow-button">Repositório</a>
+            </div>
+          </div>
+          <!-- <div class="project-tile zoo-functions">
+            <h3>Projeto Zoo Functions</h3>
+            <p>Projeto feito para simular o comportamento de um zoológico usando métodos do ES6 e higher order functions. Testes criados com o assert do node.js.</p>
+            <div>
+              <a href="#" class="button">Visualizar</a>
+              <a href="#" class="hollow-button dark-hollow">Repositório</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
     </section>
   </main>
+  <footer>
+    <div class="footer-up">
+      <div class="container">
+        <div class="card-row">
+          <div class="footer-box">
+            <h3>sobre mim</h3>
+            <p>Sou estudante de desenvolvimento web na Trybe. Amo estudar e resolver problemas usando lógica de programação, e se não sei solucionar algo não descanso até saber como fazer. Acredito que o futuro do mundo está nas mãos da tecnologia. <a href="#">Se quiser saber mais sobre mim, veja uma descrição mais completa</a>! </p>
+          </div>
+          <div class="footer-box">
+            <h3>links úteis</h3>
+            <a href="https://www.betrybe.com/" class="footer-link">Trybe - A escola de programação do futuro</a>
+            <a href="https://www.freecodecamp.org/" class="footer-link">freeCodeCamp - Teaches to code for free</a>
+            <a href="https://www.codewars.com/" class="footer-link">Code Wars - Code mastery through challenge</a>
+            <a href="https://exercism.io/" class="footer-link">Exercism - Code practice for everyone.</a>
+          </div>
+          <div class="footer-box">
+            <h3>Onde me encontrar?</h3>
+            <a href="https://www.linkedin.com/in/silvio-dayube/" class="footer-link">LinkedIn</a>
+            <a href="https://github.com/sdayube" class="footer-link">GitHub</a>
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5571994047139" class="footer-link">71 99404-7139</a>
+            <a href="mailto:scarige@gmail.com" class="footer-link">scarige@gmail.com</a>
+            <a href="https://sdcarige.jusbrasil.com.br/" class="footer-link">JusBrasil</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-down">
+      <p>Desenvolvido por Silvio Dayube. Ícones SVG retirados do <a href="https://fontawesome.com/">FontAwesome</a> sob a liçença Creative Commons 4.0.</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

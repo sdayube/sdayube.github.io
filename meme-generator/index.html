@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Meme Generator</h1>
+  </header>
+  <main>
+    <section class="controller">
+      <div class="row">
+        <label for="meme-text-upper">Texto superior:</label>
+        <input type="text" name="meme-text-upper" id="text-input" maxlength="60">
+      </div>
+      <div class="row">
+        <label for="meme-text-lower">Texto inferior:</label>
+        <input type="text" name="meme-text-lower" id="text-input-lower" maxlength="60">
+      </div>
+      <div class="row">
+        <label for="meme-img">Imagem do meme:</label>
+        <input type="file" name="meme-img" id="meme-insert">
+      </div>
+    </section>
+    <section class="container-section">
+      <div id="meme-image-container" class="container">
+        <span class="meme-text-upper" id="meme-text"></span>
+        <span class="meme-text-lower"></span>
+        <img src="" alt="Insira uma imagem!" id="meme-image">
+      </div>
+    </section>
+    <div class="bottom-controller">
+      <section class="border-change">
+        <p>Selecionar estilo da borda:</p>
+        <button id="water" class="water"><span>⛲</span>	</button>
+        <button id="fire" class="fire"><span>🔥</span></button>
+        <button id="earth" class="earth"><span>🌿</span></button>
+      </section>
+      <section class="preloaded-images">
+        <p>Templates:</p>
+        <img src="imgs/meme1.png" alt="Chapolin sentado" id="meme-1">
+        <img src="imgs/meme2.png" alt="Issi mimi pirdiu i griçi" id="meme-2">
+        <img src="imgs/meme3.png" alt="Isso claramente é um pombo" id="meme-3">
+        <img src="imgs/meme4.png" alt="Senhor quase feliz mas não muito" id="meme-4">
+      </section>
+    </div>
+  </main>
+  <footer>Desenvolvido por Silvio Dayube no curso da Trybe</footer>
+  <script src="script.js"></script>
+</body>
+</html>
