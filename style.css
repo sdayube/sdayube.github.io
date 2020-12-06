@@ -339,3 +339,43 @@ section .container {
 .survey-form:hover {
   background-image: var(--bg-gradient), url('images/survey-form.png');
 }
+
+/* Footer section
+---------------------------------------------------------- */
+
+.footer-down {
+  background-color: #383838;
+  color: white;
+  text-align: center;
+}
+
+.footer-down p a {
+  color: lightgray;
+}
+
+
+.footer-down p a:visited {
+  color: inherit;
+}
+
+.footer-up , .footer-down {
+  padding: 35px 0;
+}
+
+.footer-box {
+  flex: 1 1 30%;
+  margin: 0 10px;
+}
+
+.footer-link {
+  border-bottom: 1px solid #d5d5e0;
+  color: #668cad;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 6px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  line-height: 25px;
+  margin-top: 10px;
+}
