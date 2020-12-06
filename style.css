@@ -24,8 +24,8 @@ body {
 }
 
 section {
-  padding: 50px 10px 30px;
   background-color: white;
+  padding: 50px 10px 30px;
 }
 
 /* Header section
@@ -33,9 +33,9 @@ section {
 
 header {
   background-color: white;
+  box-shadow: 0 1px 10px grey;
   position: fixed;
   width: 100%;
-  box-shadow: 0 1px 10px grey;
 }
 
 .container {
@@ -80,9 +80,9 @@ nav a:hover {
   background-position: bottom left;
   background-size: auto, cover;
   border-bottom: 4px solid #69b9ff;
-  text-align: center;
-  height: 100vh;
   display: flex;
+  height: 100vh;
+  text-align: center;
 }
 
 section .container {
@@ -114,6 +114,7 @@ section .container {
 .button {
   background-color: #75a6d1;
   border-radius: 4px;
+  border: none;
   color: white;
   display: inline-block;
   letter-spacing: 2px;
@@ -122,7 +123,6 @@ section .container {
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 300ms ease;
-  border: none;
 }
 
 .button:hover {
@@ -163,63 +163,63 @@ section .container {
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 3px;
+  margin-top: 0;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 0;
 }
 
 .title-group p {
   color: #8e8e9c;
   font-size: 18px;
-  text-align: center;
   letter-spacing: 1px;
   line-height: 25px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .card-row {
-  margin: 0 10px 30px;
   display: flex;
   justify-content: space-around;
+  margin: 0 10px 30px;
   width: 100%;
 }
 
 .card {
-  flex: 1 1 30%;
-  padding: 15px;
-  margin: 0 10px;
-  border: 1px solid #dcebf7;
   border-radius: 5px;
+  border: 1px solid #dcebf7;
+  flex: 1 1 30%;
+  margin: 0 10px;
+  padding: 15px;
   text-align: center;
 }
 
 .card img {
-  display: block;
-  width: 35%;
-  margin: 20px auto;
-  padding: 10px;
-  border: 10px solid white;
-  border-radius: 50%;
   background-color: #69b9ff;
+  border-radius: 50%;
+  border: 10px solid white;
   box-shadow: 0 0 0 1px #2e9dff;
-  max-width: 100%;
   color: white;
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  padding: 10px;
+  width: 35%;
 }
 
 .card-row h3 {
-  margin: 0 auto;
   color: #676770;
   font-size: 20px;
-  line-height: 30px;
   font-weight: 400;
   letter-spacing: 3px;
+  line-height: 30px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
 .card-row p {
-  margin: 10px auto;
   font-size: 14px;
   line-height: 25px;
+  margin: 10px auto;
 }
 
 /* Services section
@@ -234,14 +234,14 @@ section .container {
 }
 
 .service-box {
+  flex: 1 1 50%;
   padding: 15px;
   text-align: center;
-  flex: 1 1 50%;
 }
 
 .service-box img {
-  width: 100%;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 /* Projects section
@@ -253,25 +253,26 @@ section .container {
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  text-align: center;
   column-gap: 20px;
-  row-gap: 30px;
+  display: grid;
   grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+  row-gap: 30px;
+  text-align: center;
 }
 
 .project-tile {
-  padding: 20px;
   border-radius: 5px;
   box-shadow: black 2px 2px 6px;
+  padding: 20px;
 
   --bg-gradient: linear-gradient(180deg, #0f1c2bda, #1c4466);
 }
 
 .project-tile > * {
-  visibility: hidden;
   color: white;
+  visibility: hidden;
 }
 
 .project-tile:hover > * {
@@ -280,8 +281,8 @@ section .container {
 
 .project-tile .button {
   font-size: 12px;
-  padding: 5px 15px;
   margin-bottom: 10px;
+  padding: 5px 15px;
 }
 
 .project-tile .hollow-button {
@@ -291,6 +292,7 @@ section .container {
 
 .meme-generator {
   background-image: url('images/meme-generator.png');
+  background-position: top center;
   background-size: cover;
 }
 
@@ -300,8 +302,8 @@ section .container {
 
 .pixel-art {
   background-image: url('images/pixel-art.png');
-  background-size: cover;
   background-position: top center;
+  background-size: cover;
 }
 
 .pixel-art:hover {
@@ -310,8 +312,8 @@ section .container {
 
 .to-do-list {
   background-image: url('images/to-do-list.png');
-  background-size: cover;
   background-position: top center;
+  background-size: cover;
 }
 
 .to-do-list:hover {
@@ -320,8 +322,8 @@ section .container {
 
 .tribute-page {
   background-image: url('images/tribute-page.png');
-  background-size: cover;
   background-position: top center;
+  background-size: cover;
 }
 
 .tribute-page:hover {
@@ -330,8 +332,8 @@ section .container {
 
 .survey-form {
   background-image: url('images/survey-form.png');
-  background-size: cover;
   background-position: top center;
+  background-size: cover;
 }
 
 .survey-form:hover {
