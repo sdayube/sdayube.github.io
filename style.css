@@ -28,18 +28,6 @@ section {
   background-color: white;
 }
 
-@keyframes fadeEffect {
-
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-
-}
-
 /* Header section
 ---------------------------------------------------------- */
 
@@ -273,7 +261,7 @@ section .container {
   grid-auto-rows: 1fr;
 }
 
-.grid-item {
+.project-tile {
   padding: 20px;
   border-radius: 5px;
   box-shadow: black 2px 2px 6px;
@@ -281,22 +269,22 @@ section .container {
   --bg-gradient: linear-gradient(180deg, #0f1c2bda, #1c4466);
 }
 
-.grid-item > * {
+.project-tile > * {
   visibility: hidden;
   color: white;
 }
 
-.grid-item:hover > * {
+.project-tile:hover > * {
   visibility: visible;
 }
 
-.grid-item .button {
+.project-tile .button {
   font-size: 12px;
   padding: 5px 15px;
   margin-bottom: 10px;
 }
 
-.grid-item .hollow-button {
+.project-tile .hollow-button {
   font-size: 12px;
   padding: 5px 15px;
 }

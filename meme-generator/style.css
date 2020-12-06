@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-attachment: fixed;
+  box-sizing: border-box;
+  font-size: 1em;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+header {
+  background-color: rgba(0 , 0 , 0 , 0.685);
+  border-bottom: 2px solid rgba(255 , 0 , 0 , 0.5);
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.controller {
+  background: rgba(255 , 255 , 255 , 0.66);
+  border-radius: 10px 30px;
+  display: inline-block;
+  margin: 10px;
+  padding: 0 20px 10px;
+  text-align: left;
+}
+
+.row {
+  display: table-row;
+}
+
+.row label {
+  display: table-cell;
+  padding: 5px;
+  text-align: right;
+}
+
+.container {
+  background-color: white;
+  height: 400px;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+  width: 400px;
+}
+
+.container span {
+  color: white;
+  font-family: Passion One, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: black 5px 5px 5px;
+  -webkit-text-stroke: 0.5px black;
+  text-transform: uppercase;
+  width: 400px;
+}
+
+.meme-text-lower {
+  left: 50%;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50% , -70%);
+}
+
+.meme-text-upper {
+  left: 50%;
+  position: absolute;
+  top: 25%;
+  transform: translate(-50% , 30%);
+}
+
+.container img {
+  color: black;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+
+.border-change button {
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 0;
+  padding: 10px;
+}
+
+.border-change button span {
+  background-color: rgba(255 , 255 , 255 , 0.623);
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.fire {
+  background-color: red;
+}
+
+.earth {
+  background-color: green;
+}
+
+.water {
+  background-color: blue;
+}
+
+.bottom-controller {
+  background: rgba(255 , 255 , 255 , 0.66);
+  border-radius: 30px 10px;
+  display: inline-block;
+  margin: 20px;
+  padding: 0 20px 10px;
+}
+
+.preloaded-images img {
+  height: 90px;
+  width: 90px;
+}
+
+footer {
+  background-color: rgba(0 , 0 , 0 , 0.685);
+  border-top: 2px solid rgba(255 , 0 , 0 , 0.5);
+  bottom: 0;
+  color: white;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+main {
+  padding-bottom: 60px;
+}
