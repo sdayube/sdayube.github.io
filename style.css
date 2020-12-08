@@ -72,6 +72,22 @@ nav a:hover {
   color: #0082f3;
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.bars-menu {
+  padding: 18px;
+  display: none;
+}
+
+.bars-menu img {
+  width: 20px;
+}
+
 /* Hero section
 ---------------------------------------------------------- */
 
@@ -378,4 +394,135 @@ section .container {
   text-decoration: none;
   line-height: 25px;
   margin-top: 10px;
+}
+
+@media only screen and ( max-width : 991px ) {
+
+  .container {
+    max-width: 728px;
+  }
+
+  .current-link {
+    color: white;
+  }
+
+  .bars-menu {
+    display: block;
+  }
+
+  .open {
+    background-color: #3b99d9;
+    display: block;
+  }
+
+  .card img {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .bars-menu.open img {
+    filter: invert(100%);
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav a {
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  nav a:hover {
+    color: white;
+    text-shadow: black 2px 2px 4px;
+  }
+
+  .open nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 62px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    padding-top: 119px;
+    padding-bottom: 119px;
+  }
+
+}
+
+@media only screen and ( max-width : 767px ) {
+
+  .container {
+    max-width: 85%;
+  }
+
+  .hero {
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
+
+  .hero h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .card img {
+    width: 20%;
+    padding: 20px;
+  }
+
+  .footer-box:not( :last-child ) {
+    margin-bottom: 30px;
+  }
+
+  .card-row {
+    flex-direction: column;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 40%);
+  }
+
+}
+
+@media only screen and ( max-width : 479px ) {
+
+  .button {
+    margin-bottom: 25px;
+  }
+
+  .hero {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .hero h1 {
+    margin-bottom: 15px;
+    font-size: 33px;
+  }
+
+  .card img {
+    width: 35%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(1, 90%);
+  }
+
+  footer p {
+    font-size: 0.7em;
+    padding: 0 10px;
+  }
+
 }
